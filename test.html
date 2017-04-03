@@ -48,6 +48,17 @@
     </style>
     <!-- Silex HEAD tag do not remove -->
     <!-- End of Silex HEAD tag do not remove -->
+    <action>
+        <$pull>
+            type: "$util.toast",
+            <options>
+                text: "Hi"
+            </options>,
+            <success>
+                type:"$reload"
+            </success>
+        </$pull>
+    </action>
 </head>
 
 <body data-silex-id="body-initial" class="body-initial silex-runtime" data-silex-type="container" style="">
