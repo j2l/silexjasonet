@@ -33,6 +33,21 @@
 
 
 
+
+
+    <script>
+        <action>
+                <$pull>
+                    type: "$util.toast",
+                    <options>
+                        text: "Hi"
+                    </options>,
+                    <success>
+                        type:"$reload"
+                    </success>
+                </$pull>
+            </action>
+    </script>
     <style id="current-page-style">
         .page-page-1 {
             display: inherit;
@@ -40,18 +55,7 @@
     </style>
     <!-- Silex HEAD tag do not remove -->
     <!-- End of Silex HEAD tag do not remove -->
-    <script><action>
-        <$pull>
-            type: "$util.toast",
-            <options>
-                text: "Hi"
-            </options>,
-            <success>
-                type:"$reload"
-            </success>
-        </$pull>
-    </action></script>
-    </head>
+</head>
 
 <body style="" data-silex-type="container" class="body-initial silex-runtime" data-silex-id="body-initial">
 
@@ -84,6 +88,9 @@
     <div data-silex-type="container" class="prevent-draggable container-element website-min-width editable-style silex-id-1491230591478-1 section-element" data-silex-id="silex-id-1491230591478-1" style="">
         <div data-silex-type="container" class="editable-style silex-element-content website-width silex-id-1491230591477-0 silex-container-content container-element prevent-draggable" data-silex-id="silex-id-1491230591477-0"></div>
     </div>
+
+
+
 
 
 
