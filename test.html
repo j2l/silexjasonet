@@ -40,19 +40,21 @@
     </style>
     <!-- Silex HEAD tag do not remove -->
     <!-- End of Silex HEAD tag do not remove -->
-</head>
+    <script><action>
+        <$pull>
+            type: "$util.toast",
+            <options>
+                text: "Hi"
+            </options>,
+            <success>
+                type:"$reload"
+            </success>
+        </$pull>
+    </action></script>
+    </head>
 
 <body style="" data-silex-type="container" class="body-initial silex-runtime" data-silex-id="body-initial">
-    <action>
-        &lt;$pull&gt; type: "$util.toast",
-        <options>
-            text: "Hi"
-        </options>,
-        <success>
-            type:"$reload"
-        </success>
-        <!--$pull-->
-    </action>
+
 
 
 
